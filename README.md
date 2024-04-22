@@ -34,8 +34,8 @@ ExecStart=bash /<path_to_script>/login_checker.sh
 After config the files, to start the script you can run this commands:
 
 ```bash
-systemctl enable login_checker
+sudo systemctl enable login_checker
 
-systemctl start login_checker
+sudo systemctl start login_checker
 ```
 
