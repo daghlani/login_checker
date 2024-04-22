@@ -1,7 +1,7 @@
 #!/bin/bash
 # set -x
 # Initialize an empty associative array to keep track of logged-in users
-declare -A logged_in_Gusers
+declare -A logged_in_users
 SRV_NAME=<server_name>
 CHID=<chat_id>
 TKN=<token>
