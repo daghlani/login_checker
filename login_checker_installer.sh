@@ -15,5 +15,5 @@ wget https://raw.githubusercontent.com/daghlani/login_checker/main/login_checker
 touch /var/log/login_checker.log
 
 # service working
-systemctl enable login_checker
-systemctl start login_checker
+# systemctl enable login_checker
+# systemctl start login_checker
