@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # download script
-sudo wget https://raw.githubusercontent.com/daghlani/login_checker/main/login_checker.sh -o login_checker.sh
+sudo curl -O https://raw.githubusercontent.com/daghlani/login_checker/main/login_checker.sh
 
 
 # chmod
@@ -9,7 +9,7 @@ sudo chmod +x login_checker.sh
 
 
 # download service
-sudo wget https://raw.githubusercontent.com/daghlani/login_checker/main/login_checker.service -o /etc/systemd/system/login_checker.service
+sudo curl -o /etc/systemd/system/login_checker.service https://raw.githubusercontent.com/daghlani/login_checker/main/login_checker.service
 
 # create log file
 sudo touch /var/log/login_checker.log
