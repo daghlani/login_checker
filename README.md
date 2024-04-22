@@ -27,7 +27,7 @@ TKN=<token>
 Now change the location of your script in this file
 
 ```bash
-vi /etc/systemd/system/login_checker.service
+sudo vi /etc/systemd/system/login_checker.service
 ```
 
 Now change this section:

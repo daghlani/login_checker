@@ -37,7 +37,7 @@ do
                 login_time=$(echo ${logged_in_users[$user]} | awk '{print $2}')
                 # echo "User $user logged out from $user_ip at $logout_time. Logged in since: $login_time."
                 echo "User $user logged out from $user_ip at $logout_time. Logged in since: $login_time." > $LOGF
-                curl -X POST "https://tapi.bale.ai/bot"$TKN"/sendMessage" -H 'Content-Type: application/json' -d '{"chat_id": "'$CHID'", "text": "🔑 *'$SRV_NAME' Server Logout:* 🟢 \n\n👤 *User:* '$user' \n\n📍 *From: * _'$user_ip'_ \n\n⏰ *At: * '$login_time' \n\n⌛ *Logged in since:* '$login_time'"}'
+                curl -X POST "https://tapi.bale.ai/bot"$TKN"/sendMessage" -H 'Content-Type: application/json' -d '{"chat_id": "'$CHID'", "text": "🔑 *'$SRV_NAME' Server Logout:* 🟢 \n\n👤 *User:* '$user' \n\n📍 *From: * _'$user_ip'_ \n\n⏰ *At: * '$logout_time' \n\n⌛ *Logged in since:* '$login_time'"}'
                 # Remove the user from the list of logged-in users
                 unset logged_in_users[$user]
             fi
