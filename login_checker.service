@@ -3,6 +3,7 @@ Description=Login checker service
 After=network-online.target
 
 [Service]
+User=root
 ExecStart=bash /<path_to_script>/login_checker.sh
 
 [Install]
