@@ -14,7 +14,7 @@ You must first change `token`, `chat_id` and `server_name` of you server.
 
 - login_checker.sh
 
-   Change this values:
+Change this values:
 
 ```bash
 SRV_NAME=<server_name>
@@ -24,7 +24,13 @@ TKN=<token>
 
 - login_checker.service
 
-   Now change the location of your script in this file
+Now change the location of your script in this file
+
+```bash
+vi /etc/systemd/system/login_checker.service
+```
+
+Now change this section:
 
 ```bash
 ExecStart=bash /<path_to_script>/login_checker.sh
