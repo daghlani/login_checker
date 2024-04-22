@@ -1,0 +1,9 @@
+[Unit]
+Description=Login checker service
+After=network-online.target
+
+[Service]
+ExecStart=bash /var/services/scripts/login_checker.sh
+
+[Install]
+WantedBy=multi-user.target
